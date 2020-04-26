@@ -1,0 +1,124 @@
+@import"./_variables.scss";
+
+.intro{
+    width: 100%;
+    
+    align-items: center;
+    @include flex-row{
+    }
+    @include desktop{
+        height: 50%;
+        @include flex-row{
+        }
+    }
+    @include laptop{
+        @include flex-row{
+        }
+    }
+    @include tablet{
+        height: 80%;
+        @include flex-collum{}
+    }
+}
+
+.pictures{
+    width:95%;
+    align-items: center;
+    margin-bottom: 3%;
+    @include flex-row{
+    
+    }
+    @include desktop{
+        @include flex-row{
+        }
+    }
+    @include laptop{
+        @include flex-row{
+        }
+    }
+    @include tablet{
+        height: 55%;
+        @include flex-collum{
+
+        }
+    }
+
+
+}
+
+.flex-block{
+    @include flex-collum{  
+        justify-content: space-evenly;  
+    }
+    @include desktop{
+        @include flex-row{
+        justify-content: space-evenly;
+            
+        }
+    }
+}
+.scenes{
+    height: 80%;
+    @include flex-collum{
+
+    }
+   
+    
+}
+#haikyuu{
+    font-size: 2rem;
+    border-style: solid;
+    border-color: rgba(color(primary),0.6);
+    padding:3rem;
+    text-align: center;
+    width:50rem;
+}
+.scene1{
+    width: 34rem;
+    height: 100%;
+    @include desktop{
+        width: 50rem;
+    }
+    @include laptop{
+        width: 40rem;
+    }
+    @include tablet{
+        width:30rem;
+    }
+    @include phone{
+        width: 22rem;
+    }
+}
+.scene2{
+    width: 34rem;
+    height: 100%;
+    @include desktop{
+        width: 50rem;
+    }
+    @include laptop{
+        width: 40rem;
+    }
+    @include tablet{
+        width:30rem;
+    }
+    @include phone{
+        width: 22rem;
+    }
+}
+.scene3{
+    width: 34rem;
+    height: 100%;
+    @include desktop{
+        width: 50rem;
+    }
+    @include laptop{
+        width: 40rem;
+    }
+    
+    @include tablet{
+        width:30rem;
+    }
+    @include phone{
+        width: 22rem;
+    }    
+}

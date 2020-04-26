@@ -1,0 +1,46 @@
+@import"./variables";
+
+header{
+    display:flex;
+    background-attachment: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    @include desktop{
+      height: 100%;
+    }
+      @include laptop {
+        height:100%;
+      }
+      @include tablet {
+        height:100%;
+      }
+}
+
+/* h1{
+    text-align: center;
+    color: rgba((color(primary)), 0.9);
+    border-color: rgba((color(primary)), 0.5);
+    border-style: solid;
+    font-size: 4rem;
+    padding: .5rem;
+} */
+
+.title{
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    color: rgba((color(clear)), 0.9);
+    font-size: 3rem;
+      @include desktop{
+      font-size:8rem;
+      letter-spacing: 1.3rem;
+      }
+      @include laptop {
+        font-size: 5rem;
+        letter-spacing: 1.2rem;
+      }
+      @include tablet {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+      }
+}

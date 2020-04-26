@@ -1,0 +1,200 @@
+@import"./_variables.scss";
+@import"./_header.scss";
+@import"./_flexbox.scss";
+@import"./_hover1.scss";
+@import"./_zoomin-box.scss";
+@import"./_slideup.scss";
+@import"./_circle.scss";
+@import"./flip";
+@import"./_usergallery.scss";
+@import"./_contentblock4.scss";
+
+
+html{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("/dist/css/img/shanghai.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: conver;
+    background-color: black;
+    @include desktop{
+      background-image: url("/dist/css/img/shanghai.jpg");
+    }
+    @include laptop{
+      background-image: url("/dist/css/img/shanghai.jpg");
+    }
+    @include tablet{
+      background-image: url("/dist/css/img/Shanghai-horizontal.jpg");
+    }
+}
+section{
+    @include flex-row{
+  
+    }
+}
+
+.detail{
+  margin:2%;
+  padding: 1%;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2.3rem;
+  color:white;
+  align-items: center;
+  text-align: center;
+  background-color: rgba((color(primary)), 0.7);
+  border:solid white;
+  @include laptop{
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+  @include tablet{
+    margin-top: -10rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: center;
+  }
+  @include phone{
+    display: none;
+  }
+}
+.word{
+  margin:2%;
+  padding: 1%;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2.3rem;
+  color:white;
+  align-items: center;
+  text-align: center;
+  background-color: rgba((color(primary)), 0.7);
+  border:solid white;
+  @include laptop{
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+  @include tablet{
+    font-size: 1.1rem;
+    font-weight: lighter;
+    text-align: center;
+  }
+  @include phone{
+    display: none;
+  }
+}
+
+.paragraph{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2.3rem;
+  color:white;
+  text-align: center;
+}
+
+/* .text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(color(primary),0.8);
+} */
+#container{
+    width: 50%;
+    background-color: rgba(color(primary),0.2);
+    box-sizing: border-box;
+}
+
+.text{
+    font-size: 3rem;
+    color: rgba(color(secondary),0.9);
+    padding: 0.5rem;
+    margin-bottom: 0;
+}
+.subtitle{
+    font-size: 2.5rem;
+    color: rgba(color(secondary),0.8);
+    padding: 0.5rem;
+    margin-top: 0;
+}
+
+.section3{
+  height: 100%;
+  width: 100%;
+  @include flex-collum{
+  }
+  
+}
+
+.section2{
+  padding-bottom: 5%;
+  height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+  
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 3rem;
+    height: 5rem;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    align-items: center;
+  }
+  
+  .flip-card-inner {
+    width: 3rem;
+    height: 5rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+
+  .flip-card-front {
+    width: 3rem;
+    height: 5rem;
+    background-color: #bbb;
+    color: black;
+  }
+  
+
+  .flip-card-back {
+    width: 3rem;
+    height: 5rem;
+    transform: rotateY(180deg);
+  }
+
+  
+/* 
+  font-family: 'Dancing Script', cursive;
+
+  font-family: 'Tangerine', cursive;
+
+  font-family: 'Cedarville Cursive', cursive;
+
+  font-family: 'Fredericka the Great', cursive;
+
+  font-family: 'Cabin Sketch', cursive;
+
+  font-family: 'Sacramento', cursive;
+ */
